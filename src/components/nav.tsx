@@ -1,6 +1,7 @@
 import Image from "next/image";
 import Link from "next/link";
-import Button from "./button";
+import { Button } from "./ui/button";
+import { DoorOpen } from "lucide-react";
 
 const link = ["Modules", "Industries", "Pricing"];
 
@@ -25,7 +26,11 @@ const Nav = () => {
           </div>
         </div>
         <div className="flex gap-4">
-          <Button text="Try for free" />
+          <Button variant={"ghost"}>
+            <DoorOpen className="w-4 h-4 mr-2" />
+            text
+          </Button>
+          <Button>Try for free</Button>
         </div>
       </div>
     </nav>
