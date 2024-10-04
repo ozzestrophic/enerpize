@@ -7,31 +7,37 @@ const articles = [
     title: "Sales",
     description:
       "Billing & Invoicing, POS, Offers, Price Lists, Insurance Management, Sales Targets & Commissions, Installments",
+    icon: "./icons/apps-icons/Sales.svg",
   },
   {
     title: "Accounting",
     description:
       "Expenses, Taxes, Chart of Accounts, General Ledger, Auto-Journals, Cost Centers, Treasuries, Financial Reports, Cheque Cycle, Assets Management",
+    icon: "./icons/apps-icons/Accounting.svg",
   },
   {
     title: "Inventory",
     description:
       "Stock Tracking, Barcode, Purchases, Suppliers, Warehouses, Stocktaking, Requisitions, Price Lists",
+    icon: "./icons/apps-icons/Inventory.svg",
   },
   {
     title: "Human Resource",
     description:
       "Employees Management, Contracts, Payroll, Loans,  Attendance & Leaves Management, Multi-Shifts, Requests",
+    icon: "./icons/apps-icons/Human-Resource.svg",
   },
   {
     title: "CRM",
     description:
       "Clients Follow-Up, Appointments, Contacts Management, Memberships, Points & Credits, Clients Attendance",
+    icon: "./icons/apps-icons/CRM.svg",
   },
   {
     title: "Operations",
     description:
       "Work Orders, Project Management, Online Booking Management, Time Tracking, Manufacturing",
+    icon: "./icons/apps-icons/Operations.svg",
   },
 ];
 
@@ -49,6 +55,7 @@ const AppsSection = () => {
           {articles.map((article) => (
             <SectionArticle
               key={article.title}
+              icon={article.icon}
               title={article.title}
               description={article.description}
             />
