@@ -18,7 +18,7 @@ const Nav = () => {
               width={120}
               height={120}
             />
-            <div className="flex gap-6">
+            <div className="hidden gap-6 md:flex">
               {link.map((item) => (
                 <Link className="font-medium" href="/" key={item}>
                   {item}
@@ -27,9 +27,9 @@ const Nav = () => {
             </div>
           </div>
           <div className="flex gap-4">
-            <Button variant={"ghost"}>
+            <Button className="hidden md:flex" variant={"ghost"}>
               <DoorOpen className="mr-2 h-4 w-4" />
-              text
+              Log in
             </Button>
             <Button>Try for free</Button>
           </div>
