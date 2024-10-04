@@ -9,18 +9,18 @@ const Hero = () => {
           The <span className="text-primary">ERP system</span> to run your
           entire business
         </h1>
-        <p className="text-sm text-muted-foreground md:text-base">
+        <p className="text-sm font-medium text-muted-foreground md:text-base">
           Enerpize is a cloud-based all-in-one solution to seamlessly manage
           your Finance, Accounting, Sales, Inventory, Clients Relations,
           Employees, and Operations; all customized per industry
         </p>
         <Button
           variant={"secondary"}
-          className="w-full text-wrap px-4 py-10 text-lg font-bold md:w-fit md:px-20 md:text-2xl"
+          className="h-auto w-full text-wrap px-4 py-4 text-lg font-bold md:w-fit md:px-20 md:py-10 md:text-2xl"
         >
           Get Started for Free, Enerpize Now!
         </Button>
-        <div className="flex w-full flex-col items-start gap-2 text-sm md:flex-row md:justify-center md:gap-4">
+        <div className="flex w-full flex-col items-start gap-2 text-sm text-muted-foreground md:flex-row md:justify-center md:gap-4">
           <div className="flex gap-2">
             <Image
               src={"./icons/bahai-solid.svg"}
@@ -37,7 +37,7 @@ const Hero = () => {
               width={16}
               height={16}
             />
-            <p>Free 14-days trial</p>
+            <p>No credit card needed</p>
           </div>
           <div className="flex gap-2">
             <Image
@@ -46,7 +46,7 @@ const Hero = () => {
               width={16}
               height={16}
             />
-            <p>Free 14-days trial</p>
+            <p>No Setup</p>
           </div>
           <div className="flex gap-2">
             <Image
@@ -55,7 +55,7 @@ const Hero = () => {
               width={16}
               height={16}
             />
-            <p>Free 14-days trial</p>
+            <p>All apps included</p>
           </div>
         </div>
       </div>
