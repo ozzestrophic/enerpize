@@ -7,7 +7,7 @@ const link = ["Modules", "Industries", "Pricing"];
 
 const Nav = () => {
   return (
-    <nav className="border-b border-gray-200 px-16 py-4">
+    <nav className="border-b border-gray-200 px-4 py-4 md:px-16">
       <div className="mx-auto max-w-7xl">
         <div className="flex w-full items-center justify-between">
           <div className="flex items-center gap-8">

@@ -3,24 +3,24 @@ import Image from "next/image";
 
 const Hero = () => {
   return (
-    <section className="mx-auto mt-20 flex flex-col items-center gap-10">
-      <div className="flex max-w-4xl flex-col items-center gap-8 px-16 text-center">
-        <h1 className="text-6xl font-extrabold leading-tight">
+    <section className="mx-auto mt-10 flex flex-col items-center gap-10 md:mt-20">
+      <div className="flex w-full max-w-4xl flex-col items-center gap-8 px-4 text-center">
+        <h1 className="text-3xl font-extrabold leading-tight md:text-6xl">
           The <span className="text-primary">ERP system</span> to run your
           entire business
         </h1>
-        <p className="text-muted-foreground">
+        <p className="text-sm text-muted-foreground md:text-base">
           Enerpize is a cloud-based all-in-one solution to seamlessly manage
           your Finance, Accounting, Sales, Inventory, Clients Relations,
           Employees, and Operations; all customized per industry
         </p>
         <Button
           variant={"secondary"}
-          className="px-20 py-10 text-2xl font-bold"
+          className="w-full text-wrap px-4 py-10 text-lg font-bold md:w-fit md:px-20 md:text-2xl"
         >
           Get Started for Free, Enerpize Now!
         </Button>
-        <div className="flex flex-col gap-4 md:flex-row">
+        <div className="flex w-full flex-col items-start gap-2 text-sm md:flex-row md:justify-center md:gap-4">
           <div className="flex gap-2">
             <Image
               src={"./icons/bahai-solid.svg"}
