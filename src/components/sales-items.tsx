@@ -2,8 +2,6 @@
 import { useState } from "react";
 import SalesItem from "./sales-item";
 
-const array = [1, 2, 3, 4, 5];
-
 const SalesItems = () => {
   const [active, setActive] = useState(0);
 
@@ -11,13 +9,13 @@ const SalesItems = () => {
     setActive(index);
   };
   return (
-    <div className="">
-      {array.map((item, index) => (
+    <div className="border-t border-dashed border-gray-200">
+      {items.map((item, index) => (
         <SalesItem
           key={index}
-          title="Invoicing, Estimates & Quotations"
+          title={item.title}
           description="Cover sales from professional invoicing to estimates and quotes."
-          icon={"./icons/apps-icons/CRM.svg"}
+          icon={item.icon}
           active={active === index}
           onClick={() => onClick(index)}
         />
@@ -26,3 +24,36 @@ const SalesItems = () => {
   );
 };
 export default SalesItems;
+
+const items = [
+  {
+    title: "Invoicing, Estimates & Quotations",
+    description:
+      "Cover sales from professional invoicing to estimates and quotes.",
+    icon: "./icons/sales-icons/reciept.svg",
+  },
+  {
+    title: "Installments Management",
+    description:
+      "Cover sales from professional invoicing to estimates and quotes.",
+    icon: "./icons/sales-icons/cash.svg",
+  },
+  {
+    title: "Sales Targets & Commissions ",
+    description:
+      "Cover sales from professional invoicing to estimates and quotes.",
+    icon: "./icons/sales-icons/targets.svg",
+  },
+  {
+    title: "Offers and Discounts",
+    description:
+      "Cover sales from professional invoicing to estimates and quotes.",
+    icon: "./icons/sales-icons/offer.svg",
+  },
+  {
+    title: "Insurance Management",
+    description:
+      "Cover sales from professional invoicing to estimates and quotes.",
+    icon: "./icons/sales-icons/shield.svg",
+  },
+];

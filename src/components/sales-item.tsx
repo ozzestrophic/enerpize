@@ -11,6 +11,8 @@ type SalesItemProps = {
   active?: boolean;
   onClick?: () => void;
 };
+
+// TODO: animate items
 const SalesItem = ({
   title,
   description,
@@ -22,7 +24,7 @@ const SalesItem = ({
     <div
       onClick={onClick}
       className={cn(
-        "flex items-start gap-4 border-b border-gray-300 px-2 py-6",
+        "flex items-start gap-4 border-b border-gray-200 px-2 py-6",
         active ? "border-solid" : "border-dashed",
       )}
     >

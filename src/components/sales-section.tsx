@@ -5,7 +5,7 @@ import SalesItems from "./sales-items";
 const SalesSection = () => {
   return (
     <MaxWidthWrapper>
-      <section className="space-y-20 py-20">
+      <section className="space-y-10 py-20">
         <SectionHeading
           tag="Sales"
           title="Track Sales, Invoices, and Clients Payments"
