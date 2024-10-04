@@ -1,6 +1,7 @@
 import AppsSection from "@/components/apps-section";
 import Hero from "@/components/hero";
 import MaxWidthWrapper from "@/components/max-width-wrapper";
+import SalesSection from "@/components/sales-section";
 import { Button } from "@/components/ui/button";
 
 export default function Home() {
@@ -26,6 +27,8 @@ export default function Home() {
           </Button>
         </div>
       </MaxWidthWrapper>
+
+      <SalesSection />
     </div>
   );
 }
