@@ -44,7 +44,7 @@ const articles = [
 const AppsSection = () => {
   return (
     <MaxWidthWrapper>
-      <section className="space-y-20 pt-20">
+      <section className="space-y-20 py-20">
         <SectionHeading
           tag="Apps & Plugins"
           title="Flexible Solutions for Every Business Need"

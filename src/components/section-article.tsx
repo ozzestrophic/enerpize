@@ -1,3 +1,4 @@
+import { ChevronRight } from "lucide-react";
 import Image from "next/image";
 
 type Props = {
@@ -11,8 +12,11 @@ const SectionArticle = ({ title, description, icon }: Props) => {
     <article className="flex items-start gap-4">
       <Image src={icon} alt="icon" width={32} height={32} />
       <div className="space-y-4">
-        <h3 className="text-2xl font-bold">{title}</h3>
-        <p className="text-muted-foreground">{description}</p>
+        <div className="flex items-center gap-1">
+          <h3 className="text-2xl font-bold">{title}</h3>
+          <ChevronRight className="h-8 w-8 text-primary" />
+        </div>
+        <p className="text-sm text-muted-foreground">{description}</p>
       </div>
     </article>
   );
