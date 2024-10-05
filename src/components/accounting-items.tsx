@@ -30,30 +30,30 @@ const items = [
     title: "Chart of Account & Journals Accounting",
     description:
       "Automated, accurate books and journal entries, with ready-made and modifiable chart of accounts.",
-    icon: "./icons/sales-icons/reciept.svg",
+    icon: "./icons/accounting-icons/chart.svg",
   },
   {
     title: "Finance & Expenses Tracking.",
     description:
       "Automated, accurate books and journal entries, with ready-made and modifiable chart of accounts.",
-    icon: "./icons/sales-icons/reciept.svg",
+    icon: "./icons/accounting-icons/safe.svg",
   },
   {
     title: "Assets Management",
     description:
       "Automated, accurate books and journal entries, with ready-made and modifiable chart of accounts.",
-    icon: "./icons/sales-icons/reciept.svg",
+    icon: "./icons/accounting-icons/assets.svg",
   },
   {
     title: "Cost Centers",
     description:
       "Automated, accurate books and journal entries, with ready-made and modifiable chart of accounts.",
-    icon: "./icons/sales-icons/reciept.svg",
+    icon: "./icons/accounting-icons/cost.svg",
   },
   {
     title: "Cheque Cycle",
     description:
       "Automated, accurate books and journal entries, with ready-made and modifiable chart of accounts.",
-    icon: "./icons/sales-icons/reciept.svg",
+    icon: "./icons/accounting-icons/cheque.svg",
   },
 ];
