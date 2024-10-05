@@ -32,14 +32,12 @@ const SalesItem = ({
       <Image src={icon} alt="icon" width={24} height={24} />
       <div className="space-y-2">
         <h4 className="font-semibold">{title}</h4>
-        {active && (
-          <p className="">
-            {description}
-            <Link href={"#"} className="ml-1 text-primary">
-              Learn More <ArrowRight className="inline-block h-4 w-4" />
-            </Link>
-          </p>
-        )}
+        <p className={active ? "" : "hidden"}>
+          {description}
+          <Link href={"#"} className="ml-1 text-primary">
+            Learn More <ArrowRight className="inline-block h-4 w-4" />
+          </Link>
+        </p>
       </div>
     </motion.div>
   );
