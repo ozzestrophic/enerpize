@@ -1,5 +1,6 @@
 import { Button } from "@/components/ui/button";
 import Image from "next/image";
+import HeroImage from "./hero-image";
 
 const Hero = () => {
   return (
@@ -59,20 +60,7 @@ const Hero = () => {
           </div>
         </div>
       </div>
-      <div className="w-full">
-        <Image
-          src={"/hero-image.png"}
-          alt="hero"
-          layout="responsive"
-          width={100}
-          height={100}
-          sizes="100vw"
-          style={{
-            width: "100%",
-            height: "auto",
-          }}
-        />
-      </div>
+      <HeroImage />
     </section>
   );
 };
