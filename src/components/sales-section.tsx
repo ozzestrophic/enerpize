@@ -44,7 +44,7 @@ const SalesSection = () => {
           <SalesItems />
           <Button
             variant={"secondary"}
-            className="h-auto w-full justify-between px-6 py-5 text-xl font-bold"
+            className="h-auto w-full justify-between text-wrap px-6 py-5 text-lg font-bold md:text-xl"
           >
             Start Selling for Free
             <ArrowRight className="h-6 w-6" />

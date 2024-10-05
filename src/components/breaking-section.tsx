@@ -25,7 +25,7 @@ const BreakingSection = () => {
             free.
           </p>
         </div>
-        <Button className="h-fit px-8 py-6 text-xl font-bold">
+        <Button className="h-fit text-wrap px-8 py-6 text-xl font-bold">
           Customize Your Experience
         </Button>
       </motion.div>
