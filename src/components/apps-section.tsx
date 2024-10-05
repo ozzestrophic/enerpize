@@ -1,6 +1,61 @@
+"use client";
 import MaxWidthWrapper from "@/components/max-width-wrapper";
 import SectionArticle from "@/components/section-article";
 import SectionHeading from "@/components/section-heading";
+import { motion, useInView } from "framer-motion";
+import { useRef } from "react";
+
+const AppsSection = () => {
+  const ref = useRef(null);
+  const isInView = useInView(ref, { once: true, margin: "-200px" });
+  return (
+    <MaxWidthWrapper>
+      <motion.section
+        ref={ref}
+        initial={initial}
+        animate={isInView && animate}
+        transition={transition}
+        className="space-y-20 py-20"
+      >
+        <div className="lg:w-1/2">
+          <SectionHeading
+            tag="Apps & Plugins"
+            title="Flexible Solutions for Every Business Need"
+            description="Performing equally effectively, separately and simultaneously - Utilize
+          all, activate or deactivate to match your business needs."
+          />
+        </div>
+        <div className="grid gap-8 sm:grid-cols-2 lg:grid-cols-3">
+          {articles.map((article, index) => (
+            <SectionArticle
+              index={index}
+              key={article.title}
+              icon={article.icon}
+              title={article.title}
+              description={article.description}
+            />
+          ))}
+        </div>
+      </motion.section>
+    </MaxWidthWrapper>
+  );
+};
+export default AppsSection;
+
+const initial = {
+  opacity: 0,
+  y: 100,
+};
+
+const animate = {
+  opacity: 1,
+  y: 0,
+};
+
+const transition = {
+  duration: 0.5,
+  ease: "easeOut",
+};
 
 const articles = [
   {
@@ -40,31 +95,3 @@ const articles = [
     icon: "./icons/apps-icons/Operations.svg",
   },
 ];
-
-const AppsSection = () => {
-  return (
-    <MaxWidthWrapper>
-      <section className="space-y-20 py-20">
-        <div className="lg:w-1/2">
-          <SectionHeading
-            tag="Apps & Plugins"
-            title="Flexible Solutions for Every Business Need"
-            description="Performing equally effectively, separately and simultaneously - Utilize
-          all, activate or deactivate to match your business needs."
-          />
-        </div>
-        <div className="grid gap-8 sm:grid-cols-2 lg:grid-cols-3">
-          {articles.map((article) => (
-            <SectionArticle
-              key={article.title}
-              icon={article.icon}
-              title={article.title}
-              description={article.description}
-            />
-          ))}
-        </div>
-      </section>
-    </MaxWidthWrapper>
-  );
-};
-export default AppsSection;

@@ -1,15 +1,26 @@
 import { ChevronRight } from "lucide-react";
 import Image from "next/image";
+import { motion, useInView } from "framer-motion";
+import { useRef } from "react";
 
 type Props = {
   title: string;
   description: string;
   icon: string;
+  index: number;
 };
 
-const SectionArticle = ({ title, description, icon }: Props) => {
+const SectionArticle = ({ title, description, icon, index }: Props) => {
+  const ref = useRef(null);
+  const isInView = useInView(ref, { once: true, margin: "-50px" });
   return (
-    <article className="flex items-start gap-4">
+    <motion.article
+      ref={ref}
+      initial={{ opacity: 0, x: -100 }}
+      animate={isInView && { opacity: 1, x: 0 }}
+      transition={{ delay: index * 0.1, duration: 0.5, ease: "easeOut" }}
+      className="flex items-start gap-4"
+    >
       <Image
         src={icon}
         alt="icon"
@@ -24,7 +35,7 @@ const SectionArticle = ({ title, description, icon }: Props) => {
         </div>
         <p className="text-sm text-muted-foreground">{description}</p>
       </div>
-    </article>
+    </motion.article>
   );
 };
 export default SectionArticle;
