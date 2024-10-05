@@ -16,7 +16,7 @@ const Hero = () => {
         </p>
         <Button
           variant={"secondary"}
-          className="h-auto w-full text-wrap px-4 py-4 text-lg font-bold md:w-fit md:px-20 md:py-10 md:text-2xl"
+          className="h-auto w-full text-wrap px-4 py-4 text-lg font-bold md:w-fit md:px-20 md:py-6 md:text-2xl"
         >
           Get Started for Free, Enerpize Now!
         </Button>

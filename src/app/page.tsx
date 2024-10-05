@@ -1,3 +1,4 @@
+import AccountingSection from "@/components/accounting-section";
 import AppsSection from "@/components/apps-section";
 import Hero from "@/components/hero";
 import MaxWidthWrapper from "@/components/max-width-wrapper";
@@ -29,6 +30,8 @@ export default function Home() {
       </MaxWidthWrapper>
 
       <SalesSection />
+
+      <AccountingSection />
     </div>
   );
 }

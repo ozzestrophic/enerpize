@@ -1,21 +1,21 @@
 import MaxWidthWrapper from "@/components/max-width-wrapper";
 import SectionHeading from "@/components/section-heading";
-import SalesItems from "./sales-items";
 import Image from "next/image";
 import { Button } from "./ui/button";
 import { ArrowRight } from "lucide-react";
+import AccountingItems from "./accounting-items";
 
-const SalesSection = () => {
+const AccountingSection = () => {
   return (
-    <MaxWidthWrapper>
+    <MaxWidthWrapper className="bg-gradient-to-br from-[#FBFCFD] to-[#F7F9FB]">
       <section className="grid grid-cols-1 items-center gap-12 py-20 md:grid-cols-2 md:gap-8 md:py-40">
         <div className="row-start-2 space-y-10 md:row-start-1">
           <SectionHeading
-            tag="Sales"
-            title="Track Sales, Invoices, and Clients Payments"
+            tag="Accounting"
+            title="Complete Accounting and Bookkeeping"
             description=""
           />
-          <SalesItems />
+          <AccountingItems />
           <Button
             variant={"secondary"}
             className="h-auto w-full justify-between px-6 py-5 text-xl font-bold"
@@ -44,4 +44,4 @@ const SalesSection = () => {
     </MaxWidthWrapper>
   );
 };
-export default SalesSection;
+export default AccountingSection;
