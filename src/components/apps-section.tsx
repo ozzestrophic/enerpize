@@ -45,12 +45,14 @@ const AppsSection = () => {
   return (
     <MaxWidthWrapper>
       <section className="space-y-20 py-20">
-        <SectionHeading
-          tag="Apps & Plugins"
-          title="Flexible Solutions for Every Business Need"
-          description="Performing equally effectively, separately and simultaneously - Utilize
-        all, activate or deactivate to match your business needs."
-        />
+        <div className="lg:w-1/2">
+          <SectionHeading
+            tag="Apps & Plugins"
+            title="Flexible Solutions for Every Business Need"
+            description="Performing equally effectively, separately and simultaneously - Utilize
+          all, activate or deactivate to match your business needs."
+          />
+        </div>
         <div className="grid gap-8 sm:grid-cols-2 lg:grid-cols-3">
           {articles.map((article) => (
             <SectionArticle
