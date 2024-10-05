@@ -18,7 +18,11 @@ const SectionArticle = ({ title, description, icon, index }: Props) => {
       ref={ref}
       initial={{ opacity: 0, x: -100 }}
       animate={isInView && { opacity: 1, x: 0 }}
-      transition={{ delay: index * 0.1, duration: 0.5, ease: "easeOut" }}
+      whileHover={{ scale: 1.05 }}
+      transition={{
+        x: { delay: index * 0.1, duration: 0.5, ease: "easeOut" },
+        opacity: { delay: index * 0.1, duration: 0.5, ease: "easeOut" },
+      }}
       className="flex items-start gap-4"
     >
       <Image
