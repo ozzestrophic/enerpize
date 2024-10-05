@@ -6,7 +6,7 @@ import SalesSection from "@/components/sales-section";
 
 export default function Home() {
   return (
-    <div className="mx-auto min-h-screen space-y-10">
+    <div className="min-h-screen space-y-10">
       <Hero />
 
       <AppsSection />

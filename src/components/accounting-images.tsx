@@ -6,7 +6,7 @@ const AccountingImages = () => {
   const [hoveredIndex, setHoveredIndex] = useState<number | null>(null);
 
   return (
-    <div className="relative mx-8 grid h-full w-full place-items-center md:mx-0">
+    <div className="relative grid h-full w-full place-items-center px-8 md:px-0">
       <div className="relative space-y-8 md:w-full">
         <motion.div
           onHoverStart={() => setHoveredIndex(0)}

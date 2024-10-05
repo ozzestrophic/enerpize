@@ -26,7 +26,7 @@ const SalesImages = () => {
     <motion.div
       initial="start"
       whileHover="hovered"
-      className="relative mx-8 md:mx-0"
+      className="relative overflow-hidden p-8 md:p-4"
     >
       <motion.div variants={image1} className="relative z-20">
         <Image
@@ -36,7 +36,7 @@ const SalesImages = () => {
           height={1000}
         />
       </motion.div>
-      <motion.div variants={image2} className="absolute top-0 z-10">
+      <motion.div variants={image2} className="absolute top-0 z-10 p-8 md:p-4">
         <Image
           src={"/reciept-image.png"}
           alt="sales"
