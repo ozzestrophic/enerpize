@@ -2,11 +2,11 @@
 import MaxWidthWrapper from "@/components/max-width-wrapper";
 import SectionHeading from "@/components/section-heading";
 import SalesItems from "./sales-items";
-import Image from "next/image";
 import { Button } from "./ui/button";
 import { ArrowRight } from "lucide-react";
 import { motion, useInView } from "framer-motion";
 import { useRef } from "react";
+import SalesImages from "./sales-images";
 
 const initial = {
   opacity: 0,
@@ -50,22 +50,7 @@ const SalesSection = () => {
             <ArrowRight className="h-6 w-6" />
           </Button>
         </div>
-        <div className="relative mx-8 md:mx-0">
-          <Image
-            src={"/reciept-image.png"}
-            className="relative z-20"
-            alt="sales"
-            width={1000}
-            height={1000}
-          />
-          <Image
-            src={"/reciept-image.png"}
-            className="absolute z-10 -translate-y-[100%] -rotate-3"
-            alt="sales"
-            width={1000}
-            height={1000}
-          />
-        </div>
+        <SalesImages />
       </motion.section>
     </MaxWidthWrapper>
   );
