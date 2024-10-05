@@ -1,12 +1,12 @@
 "use client";
 import MaxWidthWrapper from "@/components/max-width-wrapper";
 import SectionHeading from "@/components/section-heading";
-import Image from "next/image";
 import { Button } from "./ui/button";
 import { ArrowRight } from "lucide-react";
 import AccountingItems from "./accounting-items";
 import { motion, useInView } from "framer-motion";
 import { useRef } from "react";
+import AccountingImages from "./accounting-images";
 
 const AccountingSection = () => {
   const ref = useRef(null);
@@ -36,31 +36,7 @@ const AccountingSection = () => {
               <ArrowRight className="h-6 w-6" />
             </Button>
           </div>
-          <div className="relative mx-8 grid h-full w-full place-items-center md:mx-0">
-            <div className="relative space-y-8 md:w-full">
-              <Image
-                src={"/chart1.png"}
-                className="relative left-0 top-0 w-4/5"
-                alt="sales"
-                width={1000}
-                height={1000}
-              />
-              <Image
-                src={"/chart2.png"}
-                className="top-1/5 relative left-[20%] w-4/5"
-                alt="sales"
-                width={1000}
-                height={1000}
-              />
-              <Image
-                src={"/chart3.png"}
-                className="relative bottom-0 left-0 w-4/5"
-                alt="sales"
-                width={1000}
-                height={1000}
-              />
-            </div>
-          </div>
+          <AccountingImages />
         </motion.section>
       </MaxWidthWrapper>
     </div>
