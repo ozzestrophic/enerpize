@@ -21,8 +21,8 @@ const SalesItem = ({
   onClick,
 }: SalesItemProps) => {
   return (
-    <motion.div
-      layout
+    <div
+      // layout
       onClick={onClick}
       className={cn(
         "flex cursor-pointer items-start gap-4 border-b border-gray-200 px-2 py-6",
@@ -39,7 +39,7 @@ const SalesItem = ({
           </Link>
         </p>
       </div>
-    </motion.div>
+    </div>
   );
 };
 
