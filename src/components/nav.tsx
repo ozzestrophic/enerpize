@@ -2,6 +2,7 @@ import Image from "next/image";
 import Link from "next/link";
 import { Button } from "./ui/button";
 import { DoorOpen } from "lucide-react";
+import NavBarSidemenu from "./nav-sidemenu";
 
 const link = ["Modules", "Industries", "Pricing"];
 
@@ -32,6 +33,7 @@ const Nav = () => {
               Log in
             </Button>
             <Button>Try for free</Button>
+            <NavBarSidemenu />
           </div>
         </div>
       </div>
