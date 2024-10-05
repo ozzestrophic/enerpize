@@ -3,6 +3,7 @@ import { cn } from "@/lib/utils";
 import { ArrowRight } from "lucide-react";
 import Image from "next/image";
 import Link from "next/link";
+import { motion } from "framer-motion";
 
 type SalesItemProps = {
   title: string;
@@ -12,7 +13,6 @@ type SalesItemProps = {
   onClick?: () => void;
 };
 
-// TODO: animate items
 const SalesItem = ({
   title,
   description,
@@ -21,10 +21,11 @@ const SalesItem = ({
   onClick,
 }: SalesItemProps) => {
   return (
-    <div
+    <motion.div
+      layout
       onClick={onClick}
       className={cn(
-        "flex items-start gap-4 border-b border-gray-200 px-2 py-6",
+        "flex cursor-pointer items-start gap-4 border-b border-gray-200 px-2 py-6",
         active ? "border-solid" : "border-dashed",
       )}
     >
@@ -40,7 +41,7 @@ const SalesItem = ({
           </p>
         )}
       </div>
-    </div>
+    </motion.div>
   );
 };
 
