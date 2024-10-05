@@ -13,7 +13,7 @@ const Nav = () => {
         <div className="flex w-full items-center justify-between">
           <div className="flex items-center gap-8">
             <Image
-              className="w-20 md:w-32"
+              className="w-24 md:w-32"
               src={"/enerpize-logo.png"}
               alt="Enerpize Logo"
               width={120}
