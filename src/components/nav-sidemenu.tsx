@@ -40,7 +40,6 @@ const menuItemAnimationVariants = {
   },
 };
 
-// TODO: refactor into components
 const NavBarSidemenu = () => {
   const [isOpen, toggleOpen] = useCycle(false, true);
 

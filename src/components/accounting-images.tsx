@@ -14,6 +14,10 @@ const AccountingImages = () => {
           animate={{
             scale: hoveredIndex === 0 ? 1.05 : hoveredIndex === null ? 1 : 0.75,
             rotate: hoveredIndex === 0 ? -4 : 0,
+            transition: {
+              duration: 0.3,
+              ease: "easeInOut",
+            },
           }}
           className="relative left-0 top-0 w-4/5 shadow-lg shadow-slate-300"
         >
@@ -25,6 +29,10 @@ const AccountingImages = () => {
           animate={{
             scale: hoveredIndex === 1 ? 1.05 : hoveredIndex === null ? 1 : 0.75,
             rotate: hoveredIndex === 1 ? 4 : 0,
+            transition: {
+              duration: 0.3,
+              ease: "easeInOut",
+            },
           }}
           className="top-1/5 relative left-[20%] w-4/5 shadow-lg shadow-slate-300"
         >
@@ -36,6 +44,10 @@ const AccountingImages = () => {
           animate={{
             scale: hoveredIndex === 2 ? 1.05 : hoveredIndex === null ? 1 : 0.75,
             rotate: hoveredIndex === 2 ? -4 : 0,
+            transition: {
+              duration: 0.3,
+              ease: "easeInOut",
+            },
           }}
           className="relative bottom-0 left-0 w-4/5 shadow-lg shadow-slate-300"
         >
